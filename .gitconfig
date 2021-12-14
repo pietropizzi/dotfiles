@@ -5,8 +5,8 @@
 	clean = git-lfs clean -- %f
 [user]
 	name = Peter Minarik
-	email = peter@peterminarik.com
-	signingkey = CB94E127DBE22D31
+	email = peter@soundcloud.com
+	signingkey = 7CBCECB768860C82
 [pull]
 	rebase = true
 [alias]
