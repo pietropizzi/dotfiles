@@ -1,0 +1,18 @@
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[user]
+	name = Peter Minarik
+	email = peter@peterminarik.com
+	signingkey = CB94E127DBE22D31
+[pull]
+	rebase = true
+[alias]
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	mylog = log --pretty=format:'%h %s [%an]' --graph
+	su = submodule update
+[commit]
+	gpgsign = true
