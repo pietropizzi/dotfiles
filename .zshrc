@@ -69,10 +69,12 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+source /Users/peter/.bashrc
 
 export PATH="/Users/peter/dev/sc/ios/scripts/bin:${PATH}"
+export PATH="/opt/homebrew/bin":$PATH
 
-eval "$(rbenv init -)"
+# export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1) --with-readline-dir=$(brew --prefix readline)"
 
 # User configuration
 
