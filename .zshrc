@@ -112,3 +112,7 @@ alias gpv="gh pr view $1"
 alias sctuist-generate="killall Xcode && sc-tuist generate SoundCloud && open SoundCloud.xcworkspace"
 
 [ -d "$HOME/.sc-tools" ] && source "$HOME/.sc-tools/dotfiles/env.zsh" #sc-tools-setup
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
