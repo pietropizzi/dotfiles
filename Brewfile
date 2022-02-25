@@ -13,6 +13,7 @@ brew "rbenv"
 brew "vault"
 brew "xclogparser"
 brew "zsh"
+brew "fzf"
 
 cask "iterm2"
 cask "visual-studio-code"
