@@ -69,7 +69,8 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-source /Users/peter/.bashrc
+
+eval "$(rbenv init -)"
 
 export PATH="/Users/peter/dev/sc/ios/scripts/bin:${PATH}"
 export PATH="/opt/homebrew/bin":$PATH
@@ -106,6 +107,8 @@ export PATH=`which node`:$PATH
 alias zshconfig="code ~/.zshrc"
 alias git-list-local-only-branches="git branch -vv | grep 'origin/.*: gone]' | awk '{print \$1}'"
 alias git-remove-local-only-branches="git branch -vv | grep 'origin/.*: gone]' | awk '{print \$1}' | xargs git branch -D"
+
+alias tuistgen="{echo "app"; find ./Frameworks -mindepth 1 -maxdepth 1 -type d | sed 's/.*\///' } | fzf | xargs sc-tuist generate"
 
 alias gps="gh pr status"
 alias gpv="gh pr view $1"
