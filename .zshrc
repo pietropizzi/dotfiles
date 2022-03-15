@@ -110,6 +110,8 @@ alias git-remove-local-only-branches="git branch -vv | grep 'origin/.*: gone]' |
 
 alias tuistgen="{echo "app"; find ./Frameworks -mindepth 1 -maxdepth 1 -type d | sed 's/.*\///' } | fzf | xargs sc-tuist generate"
 
+alias sc-simulator-data="xcrun simctl get_app_container booted com.soundcloud.TouchApp data"
+
 alias gps="gh pr status"
 alias gpv="gh pr view $1"
 
