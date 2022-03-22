@@ -105,8 +105,8 @@ export PATH=`which node`:$PATH
 #
 # Example aliases
 alias zshconfig="code ~/.zshrc"
-alias git-list-local-only-branches="git branch -vv | grep 'origin/.*: gone]' | awk '{print \$1}'"
-alias git-remove-local-only-branches="git branch -vv | grep 'origin/.*: gone]' | awk '{print \$1}' | xargs git branch -D"
+alias grlb="git branch -vv | grep 'origin/.*: gone]' | awk '{print \$1}' | xargs git branch -D"
+alias gsb="gb | sed 's/[\* ]//' | fzf | xargs git checkout"
 
 alias tuistgen="{echo "app"; find ./Frameworks -mindepth 1 -maxdepth 1 -type d | sed 's/.*\///' } | fzf | xargs sc-tuist generate"
 
