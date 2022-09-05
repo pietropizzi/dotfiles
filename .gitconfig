@@ -16,3 +16,5 @@
 	su = submodule update
 [commit]
 	gpgsign = true
+[gpg]
+	program = /usr/local/bin/gpg
