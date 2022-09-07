@@ -107,6 +107,7 @@ export PATH=`which node`:$PATH
 alias zshconfig="code ~/.zshrc"
 alias grlb="git branch -vv | grep 'origin/.*: gone]' | awk '{print \$1}' | xargs git branch -D"
 alias gsb="gb | sed 's/[\* ]//' | fzf | xargs git checkout"
+alias g-rm-tag="g tag -d $1; g push --delete origin $1"
 
 alias tuistgen="{echo "app"; find ./Frameworks -mindepth 1 -maxdepth 1 -type d | sed 's/.*\///' } | fzf | xargs sc-tuist generate"
 
