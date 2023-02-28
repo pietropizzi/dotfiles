@@ -116,7 +116,7 @@ alias sc-simulator-data="xcrun simctl get_app_container booted com.soundcloud.To
 alias gps="gh pr status"
 alias gpv="gh pr view $1"
 
-alias sctuist-generate="killall Xcode && sc-tuist generate SoundCloud && open SoundCloud.xcworkspace"
+alias sctuist-generate="killall Xcode && tuist generate"
 
 [ -d "$HOME/.sc-tools" ] && source "$HOME/.sc-tools/dotfiles/env.zsh" #sc-tools-setup
 
