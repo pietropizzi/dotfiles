@@ -117,6 +117,11 @@ alias gps="gh pr status"
 alias gpv="gh pr view $1"
 
 alias sctuist-generate="killall Xcode && tuist generate"
+alias sct="killall Xcode && tuist generate"
+alias tg="tuist generate"
+alias tgn="tuist generate -n"
+alias tf="tuist fetch"
+alias tfu="tuist fetch --update"
 
 [ -d "$HOME/.sc-tools" ] && source "$HOME/.sc-tools/dotfiles/env.zsh" #sc-tools-setup
 
