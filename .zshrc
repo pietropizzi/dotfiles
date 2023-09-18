@@ -76,6 +76,8 @@ export PATH="/Users/peter/dev/sc/ios/scripts/bin:${PATH}"
 export PATH="/opt/homebrew/bin":$PATH
 export PATH=`which node`:$PATH
 
+export FASTLANE_USER="peter@soundcloud.com"
+
 # export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1) --with-readline-dir=$(brew --prefix readline)"
 
 # User configuration
