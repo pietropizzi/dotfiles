@@ -107,7 +107,7 @@ export FASTLANE_USER="peter@soundcloud.com"
 #
 # Example aliases
 alias zshconfig="code ~/.zshrc"
-alias grlb="git branch -vv | grep 'origin/.*: gone]' | awk '{print \$1}' | xargs git branch -D"
+alias grlb="git fetch --all --prune && git branch -vv | grep 'origin/.*: gone]' | awk '{print \$1}' | xargs git branch -D"
 alias gsb="gb | sed 's/[\* ]//' | fzf | xargs git checkout"
 alias g-rm-tag="g tag -d $1; g push --delete origin $1"
 
