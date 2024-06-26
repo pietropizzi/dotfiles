@@ -75,6 +75,7 @@ eval "$(rbenv init -)"
 export PATH="/Users/peter/dev/sc/ios/scripts/bin:${PATH}"
 export PATH="/opt/homebrew/bin":$PATH
 export PATH=`which node`:$PATH
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 
 export FASTLANE_USER="peter@soundcloud.com"
 
