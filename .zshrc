@@ -112,19 +112,16 @@ alias grlb="git fetch --all --prune && git branch -vv | grep 'origin/.*: gone]' 
 alias gsb="gb | sed 's/[\* ]//' | fzf | xargs git checkout"
 alias g-rm-tag="g tag -d $1; g push --delete origin $1"
 
-alias tuistgen="{echo "app"; find ./Frameworks -mindepth 1 -maxdepth 1 -type d | sed 's/.*\///' } | fzf | xargs sc-tuist generate"
-
 alias sc-simulator-data="xcrun simctl get_app_container booted com.soundcloud.TouchApp data"
 
 alias gps="gh pr status"
 alias gpv="gh pr view $1"
 
-alias sctuist-generate="killall Xcode && tuist generate"
 alias sct="killall Xcode && tuist generate"
 alias tg="tuist generate"
-alias tgn="tuist generate -n"
-alias tf="tuist fetch"
-alias tfu="tuist fetch --update"
+alias tgn="tuist generate --no-open"
+alias ti="tuist install"
+alias tfi="tuist install --update"
 
 [ -d "$HOME/.sc-tools" ] && source "$HOME/.sc-tools/dotfiles/env.zsh" #sc-tools-setup
 
@@ -152,5 +149,5 @@ load-nvmrc() {
 }
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+eval "$(~/.local/bin/mise activate zsh)"
+eval "$(~/.local/bin/mise activate zsh)"
