@@ -6,7 +6,7 @@
 [user]
 	name = Peter Minarik
 	email = peter@soundcloud.com
-	signingkey = 7CBCECB768860C82
+	signingkey = 3EAE721B92F75032
 [pull]
 	rebase = true
 [alias]

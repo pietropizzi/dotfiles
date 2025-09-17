@@ -151,3 +151,5 @@ add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 eval "$(~/.local/bin/mise activate zsh)"
 eval "$(~/.local/bin/mise activate zsh)"
+
+export GPG_TTY=$(tty)
