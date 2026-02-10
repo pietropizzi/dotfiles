@@ -123,6 +123,12 @@ alias tgn="tuist generate --no-open"
 alias ti="tuist install"
 alias tfi="tuist install --update"
 
+# SoundCloud claude code over AWS BEDROCK
+
+export CLAUDE_CODE_USE_BEDROCK=1
+export AWS_REGION=eu-central-1
+export AWS_PROFILE=sc-genai-sandbox
+
 [ -d "$HOME/.sc-tools" ] && source "$HOME/.sc-tools/dotfiles/env.zsh" #sc-tools-setup
 
 export NVM_DIR="$HOME/.nvm"
