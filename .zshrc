@@ -159,3 +159,10 @@ eval "$(~/.local/bin/mise activate zsh)"
 eval "$(~/.local/bin/mise activate zsh)"
 
 export GPG_TTY=$(tty)
+source /Users/peter/.safe-chain/scripts/init-posix.sh # Safe-chain Zsh initialization script
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/peter/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/peter/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/peter/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/peter/google-cloud-sdk/completion.zsh.inc'; fi
